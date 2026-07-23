@@ -9,6 +9,21 @@ html{
 }
 
 body{
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#f7f5f1;font-family:Inter,sans-serif;color:#222}
+#opening{min-height:100vh;display:grid;place-items:center}
+.intro{text-align:center}
+h1{font-family:'Great Vibes',cursive;font-size:84px;font-weight:400}
+.invite{font-family:'Cormorant Garamond',serif;letter-spacing:4px;margin:8px 0 40px}
+.envelope{position:relative;width:min(540px,82vw);aspect-ratio:1.45;filter:drop-shadow(0 30px 40px rgba(0,0,0,.18));cursor:pointer}
+.letter{position:absolute;left:7%;right:7%;top:8%;height:78%;background:#fcfaf6;border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1}
+.letter h2{font-family:'Great Vibes',cursive;font-size:60px;font-weight:400}
+.letter p{font-family:'Cormorant Garamond',serif;letter-spacing:3px}
+.envelope:before{content:'';position:absolute;inset:0;background:linear-gradient(#fff,#f1ede7);border-radius:8px;z-index:2}
+.envelope:after{content:'';position:absolute;inset:0;clip-path:polygon(0 0,50% 56%,100% 0,100% 100%,0 100%);background:#fff;z-index:4}
+.flap{position:absolute;left:0;top:0;width:100%;height:52%;clip-path:polygon(0 0,100% 0,50% 100%);background:linear-gradient(#fff,#ece7df);z-index:5;transform-origin:top}
+.seal{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:96px;height:96px;border-radius:50%;display:grid;place-items:center;font-family:'Great Vibes',cursive;font-size:40px;color:#eee;background:radial-gradient(circle at 35% 30%,#444,#121212 70%);box-shadow:inset 0 2px 6px rgba(255,255,255,.15),inset 0 -8px 14px rgba(0,0,0,.5),0 12px 25px rgba(0,0,0,.2);z-index:10}
+.tap{margin-top:40px;letter-spacing:5px;text-transform:uppercase;color:#666;font-size:13px}
 
     background:#f8f7f4;
     font-family:'Inter',sans-serif;
