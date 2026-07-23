@@ -6,12 +6,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>G&A | Engagement Party</title>
+<title>Giovanna & Augusto</title>
+
+<meta name="theme-color" content="#000000">
+
+<meta name="description"
+content="Você está convidado para celebrar nosso noivado.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
@@ -19,122 +24,587 @@
 
 <body>
 
-<div class="background"></div>
+<!-- ===================== -->
+<!-- PRELOADER -->
+<!-- ===================== -->
 
-<section id="opening">
+<div id="loader">
 
-    <div class="envelope">
+<div class="loader-content">
 
-        <div class="flap"></div>
+<div class="loader-monogram">
 
-        <div class="letter-preview">
+G<span>&</span>A
 
-            <span>G&A</span>
-
-        </div>
-
-        <div class="seal">
-            G&A
-        </div>
-
-    </div>
-
-    <p class="tap">
-        Tap to Open
-    </p>
-
-</section>
-
-
-
-<section id="invitation">
-
-    <div class="card">
-
-        <img src="images/capa.jpg" class="hero">
-
-        <h1>G&A</h1>
-
-        <h2>Engagement Party</h2>
-
-        <div class="details">
-
-            <p><strong>12 September 2026</strong></p>
-
-            <p>19h</p>
-
-            <p>Salão Party</p>
-
-            <p>Rua São José Maria Escrivá, 669</p>
-
-        </div>
-
-        <div class="text">
-
-<p>
-Finalmente o convite oficial para a celebração do nosso noivado e fazemos muitíssima questão da tua presença!
-</p>
-
-<p>
-Será uma “dinner-party” para comemorar com vocês, nossos amigos, essa nova etapa das nossas vidas. Preparamos tudo com muito carinho para aproveitarmos muito, o bar vai estar abastecido, os motivos para brindar também, então venham prontos comemorar como uma notícia dessas merece!
-</p>
-
-<p>
-E, um pedido: cheguem no horário! O fotógrafo estará conosco na primeira hora da festa e queremos muito poder registrar esse momento com cada um de vocês!!
-</p>
-
-        </div>
-
-
-
-<div class="important">
-
-<h3>Obs importantes</h3>
+</div>
 
 <p>
 
-<strong>Acompanhantes</strong><br>
-
-Namorados(as), noivos(as), são nossos convidados também.
-
-Caso venha acompanhado(a), é só confirmar no "Confirm Presence”.
-
-</p>
-
-<p>
-
-<strong>Dress code</strong><br>
-
-Esporte fino.
+Welcome to our Engagement
 
 </p>
 
 </div>
 
+</div>
 
+<!-- ===================== -->
+<!-- MUSIC -->
+<!-- ===================== -->
 
-<div class="buttons">
+<audio
+id="music"
+loop>
 
-<a href="#" class="btn black">
+<source
+src="assets/audio/music.mp3"
+type="audio/mpeg">
 
-Confirm Presence
+</audio>
 
-</a>
+<button
+id="musicButton">
 
-<a href="#" class="btn">
+♪ Play Music
 
-Open Maps
+</button>
 
-</a>
+<!-- ===================== -->
+<!-- OPEN SCREEN -->
+<!-- ===================== -->
+
+<section
+id="opening">
+
+<div class="overlay"></div>
+
+<div class="opening-card">
+
+<div class="monogram">
+
+G<span>&</span>A
 
 </div>
+
+<p class="small">
+
+Together with our families
+
+</p>
+
+<h1>
+
+We're Engaged
+
+</h1>
+
+<p class="description">
+
+There are moments that deserve
+to be celebrated with the people
+who make life more beautiful.
+
+</p>
+
+<button id="enterButton">
+
+Tap to Open
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ===================== -->
+<!-- HERO -->
+<!-- ===================== -->
+
+<section id="hero">
+
+<div class="hero-image">
+
+<img
+src="assets/images/hero.jpg"
+alt="Giovanna e Augusto">
+
+</div>
+
+<div class="hero-content">
+
+<p class="eyebrow">
+
+SAVE THE DATE
+
+</p>
+
+<h2>
+
+Giovanna
+
+<span>&</span>
+
+Augusto
+
+</h2>
+
+<p class="hero-text">
+
+Cada história de amor tem um
+capítulo inesquecível.
+
+O nosso merece ser celebrado
+ao lado das pessoas que fazem
+parte da nossa vida.
+
+Esperamos vocês para brindar,
+rir, dançar e viver uma noite
+que ficará para sempre em nossa
+memória.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===================== -->
+<!-- COUNTDOWN -->
+<!-- ===================== -->
+
+<section id="countdown">
+
+<h2>
+
+Contagem Regressiva
+
+</h2>
+
+<div class="timer">
+
+<div>
+
+<span id="days">
+
+00
+
+</span>
+
+<p>Dias</p>
+
+</div>
+
+<div>
+
+<span id="hours">
+
+00
+
+</span>
+
+<p>Horas</p>
+
+</div>
+
+<div>
+
+<span id="minutes">
+
+00
+
+</span>
+
+<p>Min</p>
+
+</div>
+
+<div>
+
+<span id="seconds">
+
+00
+
+</span>
+
+<p>Seg</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===================== -->
+<!-- EVENTO -->
+<!-- ===================== -->
+
+<section id="event">
+
+    <div class="container">
+
+        <p class="section-subtitle">
+            NOSSO DIA
+        </p>
+
+        <h2 class="section-title">
+            Celebre conosco
+        </h2>
+
+        <div class="event-grid">
+
+            <div class="event-card">
+
+                <div class="icon">💍</div>
+
+                <h3>Data</h3>
+
+                <p>
+                    12 de Setembro de 2026
+                </p>
+
+            </div>
+
+            <div class="event-card">
+
+                <div class="icon">🕖</div>
+
+                <h3>Horário</h3>
+
+                <p>
+                    19h00
+                </p>
+
+            </div>
+
+            <div class="event-card">
+
+                <div class="icon">📍</div>
+
+                <h3>Local</h3>
+
+                <p>
+                    Porto Alegre • RS
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
 
 </section>
+
+<!-- ===================== -->
+<!-- MAPA -->
+<!-- ===================== -->
+
+<section id="location">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Como chegar
+        </h2>
+
+        <p class="section-description">
+            Toque no mapa para abrir a navegação.
+        </p>
+
+        <a
+            href="https://maps.google.com"
+            target="_blank"
+            class="map-link">
+
+            <img
+                src="assets/images/map.jpg"
+                alt="Mapa">
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ===================== -->
+<!-- DRESS CODE -->
+<!-- ===================== -->
+
+<section id="dresscode">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            Dress Code
+
+        </h2>
+
+        <p>
+
+            Esporte Fino
+
+        </p>
+
+        <p class="dress-text">
+
+            Queremos uma noite elegante,
+            mas confortável.
+
+            Vista aquilo que faz você se
+            sentir incrível.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ===================== -->
+<!-- PROGRAMAÇÃO -->
+<!-- ===================== -->
+
+<section id="timeline">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            Programação
+
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <span>19:00</span>
+
+                <h3>Recepção</h3>
+
+                <p>
+                    Welcome Drink
+                </p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <span>20:00</span>
+
+                <h3>Jantar</h3>
+
+                <p>
+                    Buffet Grego
+                </p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <span>21:30</span>
+
+                <h3>Brinde</h3>
+
+                <p>
+                    Momento especial do casal
+                </p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <span>22:00</span>
+
+                <h3>Festa</h3>
+
+                <p>
+                    Drinks, jogos e pista liberada
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================== -->
+<!-- GALERIA -->
+<!-- ===================== -->
+
+<section id="gallery">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            Nossa História
+
+        </h2>
+
+        <div class="gallery-grid">
+
+            <img src="assets/images/gallery1.jpg" alt="">
+            <img src="assets/images/gallery2.jpg" alt="">
+            <img src="assets/images/gallery3.jpg" alt="">
+            <img src="assets/images/gallery4.jpg" alt="">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================== -->
+<!-- RSVP -->
+<!-- ===================== -->
+
+<section id="rsvp">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            Confirme sua presença
+
+        </h2>
+
+        <p>
+
+            Ficaremos muito felizes em celebrar
+            esse momento com você.
+
+        </p>
+
+        <a
+            href="https://wa.me/55SEUNUMERO"
+            class="button">
+
+            Confirmar Presença
+
+        </a>
+
+    </div>
+
+</section>
+<!-- ===================== -->
+<!-- MENSAGEM FINAL -->
+<!-- ===================== -->
+
+<section id="final-message">
+
+    <div class="container">
+
+        <div class="final-card">
+
+            <p class="quote">
+
+                "O amor não consiste em olhar um para o outro,
+                mas sim em olhar juntos na mesma direção."
+
+            </p>
+
+            <div class="signature">
+
+                <h2>
+
+                    Giovanna
+                    <span>&</span>
+                    Augusto
+
+                </h2>
+
+                <p>
+
+                    Com carinho,
+                    esperamos vocês
+                    para viver este momento
+                    inesquecível ao nosso lado.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================== -->
+<!-- FOOTER -->
+<!-- ===================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-monogram">
+
+            G<span>&</span>A
+
+        </div>
+
+        <p>
+
+            12 de Setembro de 2026
+
+        </p>
+
+        <p>
+
+            Porto Alegre • RS
+
+        </p>
+
+        <div class="footer-divider"></div>
+
+        <small>
+
+            Made with ♥ for our favorite people.
+
+        </small>
+
+    </div>
+
+</footer>
+
+<!-- ===================== -->
+<!-- BACK TO TOP -->
+<!-- ===================== -->
+
+<button
+    id="backToTop"
+    aria-label="Voltar ao topo">
+
+    ↑
+
+</button>
+
+<!-- ===================== -->
+<!-- BACKGROUND PARTICLES -->
+<!-- ===================== -->
+
+<div id="particles">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+</div>
+
+<!-- ===================== -->
+<!-- SCRIPT -->
+<!-- ===================== -->
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
